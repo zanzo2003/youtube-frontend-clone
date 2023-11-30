@@ -26,6 +26,7 @@ body{
     left: 0;
     background-color: white;
     border-bottom: 1px solid rgb(210, 208, 208);
+    z-index: 1;
 }
 
 .brand{
@@ -93,6 +94,17 @@ body{
     align-items: center;
     margin-right: 20px;
     flex-shrink: 0;
+    position: relative;
+}
+#notification{
+    background-color: rgb(204, 1, 1);
+    position:absolute;
+    font-size: 10px;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    right: 60px;
+    top: 2px;
 }
 .actions-img{
     height: 25px;
@@ -112,13 +124,17 @@ body{
     left: 0;
     background-color: white;
     width: 70px;
+    z-index: 1;
 }
 .options{
-    margin: 30px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+.options:hover{
+    background-color:rgb(213, 213, 213) ;
 }
 
 .sidebar-img{
@@ -136,8 +152,10 @@ body{
     column-gap: 16px;
     row-gap: 20px;
     padding-top: 50px;
-    background-color: rgb(243, 242, 242);
     padding-left:100px;
+    padding-bottom: 50px;
+    background-color: rgb(243, 242, 242);
+    z-index: 0;
 }
 
 .thumbnail{
@@ -147,6 +165,20 @@ body{
 .video-preview{
     margin-right: 15px;
     cursor: pointer;
+}
+.thumbnail-section{
+    position: relative;
+}
+.time{
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 3px;
+    border-radius: 3px;
+    right: 5px;
+    bottom: 15px;
+    font-weight: bold;
 }
 .information-section{
     margin-top: 10px;
