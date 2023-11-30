@@ -8,6 +8,11 @@ html{
     font-family:'Roboto', Arial sans-serif;
     margin: 0;
 }
+body{
+    padding-top: 35px;
+    margin: 0;
+
+}
 
 .header{
     height: 55px;
@@ -15,7 +20,12 @@ html{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    box-shadow: 5px 5px 16px 20px rgba(227, 223, 223, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(210, 208, 208);
 }
 
 .brand{
@@ -43,6 +53,7 @@ html{
     align-items: center;
 }
 .search input{
+    width: 0;
     flex: 1;
     border: 1px solid rgb(198, 190, 190);
     border-right: none;
@@ -50,15 +61,19 @@ html{
     font-size: 16px;
 }
 #search-btn{
-    width: 70px;
-    height: 40px;
-    padding: 0 10px;
+    width: 66px;
+    height: 41px;
+    padding: 0px 10px;
     border: none;
     border: 1px solid rgb(198, 190, 190);
     cursor: pointer;
 }
+#search-btn:active{
+    background-color: rgb(223, 223, 223);
+
+}
 #search-btn-img{
-    height: 30px;
+    height: 27px;
 }
 #voice-search{
     height: 30px;
@@ -77,6 +92,7 @@ html{
     justify-content:space-between;
     align-items: center;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 .actions-img{
     height: 25px;
@@ -88,12 +104,40 @@ html{
     cursor: pointer;
 }
 
+
+.sidebar{
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    width: 70px;
+}
+.options{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-img{
+    height: 25px;
+    width: 25px;
+}
+.options-name p{
+    font-size: 10px;
+    text-align: center;
+}
+
 .video{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 20px;
-    padding-top: 20px;
+    padding-top: 50px;
+    background-color: rgb(243, 242, 242);
+    padding-left:100px;
 }
 
 .thumbnail{
